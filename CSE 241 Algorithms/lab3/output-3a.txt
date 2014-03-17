@@ -1,0 +1,77 @@
+*** UNIT TEST ONE ***
+Initial queue:
+(1, one)
+(2, two)
+(3, three)
+(6, six)
+(3, three-prime)
+(4, four)
+(11, eleven)
+(7, seven)
+(8, eight)
+(12, twelve)
+(5, five)
+
+Extract: (1, one)
+Extract: (2, two)
+Extract: (3, three-prime)
+Extract: (3, three)
+Extract: (4, four)
+Extract: (5, five)
+
+After extractions:
+(6, six)
+(8, eight)
+(7, seven)
+(11, eleven)
+(12, twelve)
+
+After more insertions:
+(6, six)
+(8, eight)
+(7, seven)
+(9, nine)
+(12, twelve)
+(8, eight-prime)
+(14, fourteen)
+(11, eleven)
+
+Extract: (6, six)
+Extract: (7, seven)
+Extract: (8, eight)
+Extract: (8, eight-prime)
+Extract: (9, nine)
+Extract: (11, eleven)
+
+Final queue:
+(12, twelve)
+(14, fourteen)
+
+--------------------------------------------------
+*** UNIT TEST TWO ***
+Element 0: (3, element zero)
+Element 1: (1, one)
+Element 2: (2, two)
+Element 3: (3, three)
+Element 4: (4, four)
+Element 5: (5, five)
+Element 6: (6, six)
+Element 7: (7, seven)
+Element 8: (8, eight)
+Element 9: (9, nine)
+Element 10: (10, ten)
+
+After extractions: 
+Element 5: (5, five)
+Element 6: (6, six)
+Element 7: (7, seven)
+Element 8: (8, eight)
+Element 9: (9, nine)
+Element 10: (10, ten)
+
+Useless decreases: (11, elevenX)
+Useful decrease: (1, twelveX)
+Useful decrease: (2, nine)
+Useful decrease: (3, six)
+Extract: (1, twelveX)
+Extract: (2, nine)
